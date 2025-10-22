@@ -71,8 +71,11 @@ def main(args):
 
     outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
 
+    print("[DEBUG:] outline generation over: ")
+    print("[DEBUG:] ", outline_wo_description)
     raw_survey, raw_survey_with_references, raw_references, refined_survey, refined_survey_with_references, refined_references = write_subsection(args.topic, args.model, outline_with_description, args.subsection_len, args.rag_num, db, args.api_key, args.api_url)
 
+    print("[DEBUG:] raw survey generation over: ")
     with open(f'{args.saving_path}/{args.topic}.md', 'a+') as f:
         f.write(refined_survey_with_references)
     with open(f'{args.saving_path}/{args.topic}.json', 'a+') as f:

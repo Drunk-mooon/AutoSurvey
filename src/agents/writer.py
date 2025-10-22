@@ -66,6 +66,7 @@ class subsectionWriter():
         raw_survey = self.generate_document(parsed_outline, section_content)
         raw_survey_with_references, raw_references = self.process_references(raw_survey)
         if refining:
+            print("[DEBUG:] begin refining")
             final_section_content = self.refine_subsections(topic, outline, section_content)
             refined_survey = self.generate_document(parsed_outline, final_section_content)
             refined_survey_with_references, refined_references = self.process_references(refined_survey)
@@ -140,6 +141,7 @@ class subsectionWriter():
         contents = [c.replace('<format>','').replace('</format>','') for c in contents]
     
         res_l[idx] = contents
+        print("[DEBUG:] finish processing, return")
         return contents
         
     def __generate_prompt(self, template, paras):

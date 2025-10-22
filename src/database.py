@@ -18,14 +18,14 @@ class database():
 
         self.embedding_model.to(torch.device('cuda'))
 
-        self.db = TinyDB(f'{db_path}/arxiv_paper_db.json')
+        self.db = TinyDB(f'{db_path}/arxiv_paper_db_with_cc.json')
         self.table = self.db.table('cs_paper_info')
 
         self.User = Query()
         self.token_counter = tokenCounter()
-        self.title_loaded_index = faiss.read_index(f'{db_path}/faiss_paper_title_embeddings.bin')
+        self.title_loaded_index = faiss.read_index(f'{db_path}/faiss_paper_title_embeddings_FROM_2012_0101_TO_240926.bin')
 
-        self.abs_loaded_index = faiss.read_index(f'{db_path}/faiss_paper_abs_embeddings.bin')
+        self.abs_loaded_index = faiss.read_index(f'{db_path}/faiss_paper_title_abs_embeddings_FROM_2012_0101_TO_240926.bin')
         self.id_to_index, self.index_to_id = self.load_index_arxivid(db_path)
 
     def load_index_arxivid(self, db_path):

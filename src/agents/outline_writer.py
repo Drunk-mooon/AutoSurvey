@@ -32,15 +32,21 @@ class outlineWriter():
 
         # generate rough section-level outline
         outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
-        
+        print("[DEBUG:] generate rough outline finish")
         # merge outline
         section_outline = self.merge_outlines(topic=topic, outlines=outlines)
+        print("[DEBUG:] merge section-level rough outline finish")
+        with open(f"/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/output/LLM-based Multi-Agent/2-Merged_outlines.txt", "w") as f:
+            f.write(section_outline + '\n\n')
 
         # generate subsection-level outline
         subsection_outlines = self.generate_subsection_outlines(topic=topic, section_outline= section_outline,rag_num= 50)
-        
+        print("[DEBUG:] generate rough sub-outline finish")
+
         merged_outline = self.process_outlines(section_outline, subsection_outlines)
-        
+        print("[DEBUG:] merge subsection-level rough outline finish")
+        with open(f"/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/output/LLM-based Multi-Agent/3-Merged_Sub_outline.txt", "w") as f:
+            f.write(merged_outline + '\n\n')
         # edit final outline
         final_outline = self.edit_final_outline(merged_outline)
 
