@@ -141,7 +141,6 @@ class subsectionWriter():
         contents = [c.replace('<format>','').replace('</format>','') for c in contents]
     
         res_l[idx] = contents
-        print("[DEBUG:] finish processing, return")
         return contents
         
     def __generate_prompt(self, template, paras):

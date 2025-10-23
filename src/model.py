@@ -25,16 +25,21 @@ class APIModel:
         'Content-Type': 'application/json'
         }
         try:
-            response = requests.request("POST", url, headers=headers, data=payload)
+            response = requests.request("POST", url, headers=headers, data=payload, timeout=45)
             return json.loads(response.text)['choices'][0]['message']['content']
-        except:
+        except Exception as e:
+            print(f"[APIModel.__req] initial request failed: {e}, retrying")
             for _ in range(max_try):
+                print(f"retrying")
                 try:
-                    response = requests.request("POST", url, headers=headers, data=payload)
+                    response = requests.request("POST", url, headers=headers, data=payload, timeout=45)
+                    if response.status_code != 200:
+                        print(f"[APIModel.__req] status_code={response.status_code}, text={response.text[:200]}")
                     return json.loads(response.text)['choices'][0]['message']['content']
                 except:
                     pass
                 time.sleep(0.2)
+            print(f"max retry, stop retrying")
             return None
     
     def chat(self, text, temperature=1):
