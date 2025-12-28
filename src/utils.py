@@ -16,6 +16,11 @@ class tokenCounter():
         self.model_price = {}
         
     def num_tokens_from_string(self, string:str) -> int:
+        # tolerate None or non-str inputs to avoid crashes during logging/counting
+        if string is None:
+            return 0
+        if not isinstance(string, str):
+            string = str(string)
         return len(self.encoding.encode(string))
 
     def num_tokens_from_list_string(self, list_of_string:List[str]) -> int:

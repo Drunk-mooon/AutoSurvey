@@ -1,0 +1,51 @@
+Experiment Start Time: 2025-12-14 03:43:37
+==================================================
+
+
+Resuming experiments at: 2025-12-14 03:44:10
+==================================================
+
+Topic: 3D Gaussian Splatting, Exp 1 [FAILED]
+Start: 2025-12-14 03:44:10
+End: 2025-12-14 03:44:45
+Duration: 0:00:35.418848
+Error: Command '['python3', 'main.py', '--topic', '3D Gaussian Splatting', '--gpu', '0', '--saving_path', './output/3D Gaussian Splatting/exp_1', '--model', 'gpt-4o-2024-05-13', '--section_num', '7', '--subsection_len', '500', '--rag_num', '100', '--rag_max_out', '60', '--outline_reference_num', '5', '--survey_outline_path', '../database', '--db_path', '../database/database', '--embedding_model', '../gte-large-en-v1.5', '--api_key', 'sk-UCfwgl63Xg27JF8W33D746F3B80d4862979c82A51951485f', '--api_url', 'https://api.xi-ai.cn/v1/chat/completions']' returned non-zero exit status 2.
+--------------------------------------------------
+
+Topic Summary: 3D Gaussian Splatting
+Total Duration: 0:00:40.424552
+Successful Experiments: 0/10
+==================================================
+Topic: 3D Object Detection in Autonomous Driving, Exp 1 [FAILED]
+Start: 2025-12-14 03:44:50
+End: 2025-12-14 03:45:26
+Duration: 0:00:35.522397
+Error: Command '['python3', 'main.py', '--topic', '3D Object Detection in Autonomous Driving', '--gpu', '0', '--saving_path', './output/3D Object Detection in Autonomous Driving/exp_1', '--model', 'gpt-4o-2024-05-13', '--section_num', '7', '--subsection_len', '500', '--rag_num', '100', '--rag_max_out', '60', '--outline_reference_num', '5', '--survey_outline_path', '../database', '--db_path', '../database/database', '--embedding_model', '../gte-large-en-v1.5', '--api_key', 'sk-UCfwgl63Xg27JF8W33D746F3B80d4862979c82A51951485f', '--api_url', 'https://api.xi-ai.cn/v1/chat/completions']' returned non-zero exit status 2.
+--------------------------------------------------
+
+Topic Summary: 3D Object Detection in Autonomous Driving
+Total Duration: 0:00:40.528663
+Successful Experiments: 0/10
+==================================================
+Topic: Evaluation of Large Language Models, Exp 1 [FAILED]
+Start: 2025-12-14 03:45:31
+End: 2025-12-14 03:46:06
+Duration: 0:00:35.414149
+Error: Command '['python3', 'main.py', '--topic', 'Evaluation of Large Language Models', '--gpu', '0', '--saving_path', './output/Evaluation of Large Language Models/exp_1', '--model', 'gpt-4o-2024-05-13', '--section_num', '7', '--subsection_len', '500', '--rag_num', '100', '--rag_max_out', '60', '--outline_reference_num', '5', '--survey_outline_path', '../database', '--db_path', '../database/database', '--embedding_model', '../gte-large-en-v1.5', '--api_key', 'sk-UCfwgl63Xg27JF8W33D746F3B80d4862979c82A51951485f', '--api_url', 'https://api.xi-ai.cn/v1/chat/completions']' returned non-zero exit status 2.
+--------------------------------------------------
+
+Topic Summary: Evaluation of Large Language Models
+Total Duration: 0:00:40.429916
+Successful Experiments: 0/10
+==================================================
+Topic: LLM-based Multi-Agent, Exp 1 [FAILED]
+Start: 2025-12-14 03:46:11
+End: 2025-12-14 03:46:46
+Duration: 0:00:34.724112
+Error: Command '['python3', 'main.py', '--topic', 'LLM-based Multi-Agent', '--gpu', '0', '--saving_path', './output/LLM-based Multi-Agent/exp_1', '--model', 'gpt-4o-2024-05-13', '--section_num', '7', '--subsection_len', '500', '--rag_num', '100', '--rag_max_out', '60', '--outline_reference_num', '5', '--survey_outline_path', '../database', '--db_path', '../database/database', '--embedding_model', '../gte-large-en-v1.5', '--api_key', 'sk-UCfwgl63Xg27JF8W33D746F3B80d4862979c82A51951485f', '--api_url', 'https://api.xi-ai.cn/v1/chat/completions']' returned non-zero exit status 2.
+--------------------------------------------------
+
+Topic Summary: LLM-based Multi-Agent
+Total Duration: 0:00:39.730579
+Successful Experiments: 0/10
+==================================================

@@ -1,0 +1,110 @@
+Experiment Start Time: 2025-12-14 04:01:58
+==================================================
+
+Topic: 3D Gaussian Splatting, Exp 1
+Start: 2025-12-14 04:01:58
+End: 2025-12-14 04:08:57
+Duration: 0:06:58.514691
+--------------------------------------------------
+
+Topic Summary: 3D Gaussian Splatting
+Total Duration: 0:07:03.520294
+Successful Experiments: 1/10
+==================================================
+Topic: 3D Object Detection in Autonomous Driving, Exp 1
+Start: 2025-12-14 04:09:02
+End: 2025-12-14 04:15:35
+Duration: 0:06:33.657207
+--------------------------------------------------
+
+Topic Summary: 3D Object Detection in Autonomous Driving
+Total Duration: 0:06:38.662926
+Successful Experiments: 1/10
+==================================================
+Topic: Evaluation of Large Language Models, Exp 1
+Start: 2025-12-14 04:15:40
+End: 2025-12-14 04:22:42
+Duration: 0:07:01.733896
+--------------------------------------------------
+
+Topic Summary: Evaluation of Large Language Models
+Total Duration: 0:07:06.740278
+Successful Experiments: 1/10
+==================================================
+Topic: LLM-based Multi-Agent, Exp 1
+Start: 2025-12-14 04:22:47
+End: 2025-12-14 04:30:25
+Duration: 0:07:38.154476
+--------------------------------------------------
+
+Topic Summary: LLM-based Multi-Agent
+Total Duration: 0:07:43.160669
+Successful Experiments: 1/10
+==================================================
+Topic: Generative Diffusion Models, Exp 1
+Start: 2025-12-14 04:30:30
+End: 2025-12-14 04:38:15
+Duration: 0:07:45.069498
+--------------------------------------------------
+
+Topic Summary: Generative Diffusion Models
+Total Duration: 0:07:50.089609
+Successful Experiments: 1/10
+==================================================
+Topic: Graph Neural Networks, Exp 1
+Start: 2025-12-14 04:38:20
+End: 2025-12-14 04:48:06
+Duration: 0:09:45.313634
+--------------------------------------------------
+
+Topic Summary: Graph Neural Networks
+Total Duration: 0:09:50.319229
+Successful Experiments: 1/10
+==================================================
+Topic: Hallucination in Large Language Models, Exp 1
+Start: 2025-12-14 04:48:11
+End: 2025-12-14 04:53:54
+Duration: 0:05:43.070280
+--------------------------------------------------
+
+Topic Summary: Hallucination in Large Language Models
+Total Duration: 0:05:48.076008
+Successful Experiments: 1/10
+==================================================
+Topic: Multimodal Large Language Models, Exp 1
+Start: 2025-12-14 04:53:59
+End: 2025-12-14 04:59:47
+Duration: 0:05:47.779962
+--------------------------------------------------
+
+Topic Summary: Multimodal Large Language Models
+Total Duration: 0:05:52.785961
+Successful Experiments: 1/10
+==================================================
+Topic: Retrieval-Augmented Generation for Large Language Models, Exp 1
+Start: 2025-12-14 04:59:52
+End: 2025-12-14 05:06:15
+Duration: 0:06:23.488505
+--------------------------------------------------
+
+Topic Summary: Retrieval-Augmented Generation for Large Language Models
+Total Duration: 0:06:28.495083
+Successful Experiments: 1/10
+==================================================
+Topic: Vision Transformers, Exp 1
+Start: 2025-12-14 05:06:20
+End: 2025-12-14 05:13:37
+Duration: 0:07:16.620810
+--------------------------------------------------
+
+Topic Summary: Vision Transformers
+Total Duration: 0:07:21.626288
+Successful Experiments: 1/10
+==================================================
+
+Final Summary
+==================================================
+Total Start Time: 2025-12-14 04:01:58
+Total End Time: 2025-12-14 05:13:42
+Total Duration: 1:11:43.478661
+Total Topics: 10
