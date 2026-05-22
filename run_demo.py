@@ -36,7 +36,7 @@ def run_experiment(topic, exp_num, base_path, max_retry):
         "--outline_reference_num", "1500",
         "--db_path", "./database/database",
         "--embedding_model", "../SurveyForge/gte-large-en-v1.5",
-        "--api_key", "sk-cuydxqfoamljl1qymdr7t8tjzlb655yqw3r0tfxdeab87fq9",
+        "--api_key", "",
         "--api_url", "https://api.xiaomimimo.com/v1/chat/completions"
     ]
 
