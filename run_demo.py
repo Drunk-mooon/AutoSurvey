@@ -29,15 +29,15 @@ def run_experiment(topic, exp_num, base_path, max_retry):
         "--topic", topic,
         "--gpu", "0",
         "--saving_path", save_path,
-        "--model", "mimo-v2-flash",# "claude-3-5-sonnet-20241022"
-        "--section_num", "7",
-        "--subsection_len", "700",
+        "--model", "mimo-v2.5",# "claude-3-5-sonnet-20241022"
+        "--section_num", "9",
+        "--subsection_len", "900",
         "--rag_num", "60",
         "--outline_reference_num", "1500",
         "--db_path", "./database/database",
         "--embedding_model", "../SurveyForge/gte-large-en-v1.5",
-        "--api_key", "sk-cuydxqfoamljl1qymdr7t8tjzlb655yqw3r0tfxdeab87fq9",
-        "--api_url", "https://api.xiaomimimo.com/v1/chat/completions"
+        "--api_key", "",
+        "--api_url", "https://api.359896.xyz/v1/chat/completions"
     ]
 
     
@@ -123,12 +123,13 @@ def run_experiment(topic, exp_num, base_path, max_retry):
 
 def main():
 
-    base_path = "./output/survey_bench_xiaomi"
+    base_path = "./output/0709-rebuttal-remain"
     create_directory(base_path)
     
     # Loading topics
-    with open("topics_demo.txt", "r") as f:
+    with open("rebuttal_topics.txt", "r") as f:
         topics = [line.strip() for line in f if line.strip()]
+    # topics = ['LLMs-based Agents']
     
 
     start_time = datetime.now()

@@ -1,0 +1,1030 @@
+Starting experiments at: 2026-03-09 03:04:00.261267
+
+==================================================
+Starting experiments for topic: Microbial Enzymes in Pollutant Bioremediation
+==================================================
+Created directory: ./output/survey_bench_glm-5_new_topics/Microbial Enzymes in Pollutant Bioremediation/exp_1
+
+Running experiment 1 for topic: Microbial Enzymes in Pollutant Bioremediation
+Saving to: ./output/survey_bench_glm-5_new_topics/Microbial Enzymes in Pollutant Bioremediation/exp_1
+Start time: 2026-03-09 03:04:00
+
+Attempt 1 for experiment 1 on topic Microbial Enzymes in Pollutant Bioremediation
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7f23ed0289e0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1152.67it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:28,  2.39s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.44it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Microbial Enzymes in Pollutant Bioremediation failed on attempt 1 with return code 1
+Retrying...
+
+Attempt 2 for experiment 1 on topic Microbial Enzymes in Pollutant Bioremediation
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7fb9d0a9c970>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1140.14it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:28,  2.36s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.51it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Microbial Enzymes in Pollutant Bioremediation failed on attempt 2 with return code 1
+Max retries reached. Experiment failed.
+Error in experiment 1 for Microbial Enzymes in Pollutant Bioremediation: Command '['python3', 'main.py', '--topic', 'Microbial Enzymes in Pollutant Bioremediation', '--gpu', '0', '--saving_path', './output/survey_bench_glm-5_new_topics/Microbial Enzymes in Pollutant Bioremediation/exp_1', '--model', 'glm-5', '--section_num', '7', '--subsection_len', '700', '--rag_num', '60', '--outline_reference_num', '1500', '--db_path', './database/database', '--embedding_model', '../SurveyForge/gte-large-en-v1.5', '--api_key', 'sk-8b3f9c6d7a1e4f2c9d5b6a7e3c1f8d2a', '--api_url', 'http://122.193.22.114:8889/v1/chat/completions']' returned non-zero exit status 1.
+Failed experiment duration: 0:01:24.108279
+
+==================================================
+Starting experiments for topic: Lactic Acid Bacteria and Bacteriocins
+==================================================
+Created directory: ./output/survey_bench_glm-5_new_topics/Lactic Acid Bacteria and Bacteriocins/exp_1
+
+Running experiment 1 for topic: Lactic Acid Bacteria and Bacteriocins
+Saving to: ./output/survey_bench_glm-5_new_topics/Lactic Acid Bacteria and Bacteriocins/exp_1
+Start time: 2026-03-09 03:05:29
+
+Attempt 1 for experiment 1 on topic Lactic Acid Bacteria and Bacteriocins
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7f02c101c9e0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 749.32it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:28,  2.34s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.51it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Lactic Acid Bacteria and Bacteriocins failed on attempt 1 with return code 1
+Retrying...
+
+Attempt 2 for experiment 1 on topic Lactic Acid Bacteria and Bacteriocins
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7f93a44209e0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1038.27it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:28,  2.34s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.55it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Lactic Acid Bacteria and Bacteriocins failed on attempt 2 with return code 1
+Max retries reached. Experiment failed.
+Error in experiment 1 for Lactic Acid Bacteria and Bacteriocins: Command '['python3', 'main.py', '--topic', 'Lactic Acid Bacteria and Bacteriocins', '--gpu', '0', '--saving_path', './output/survey_bench_glm-5_new_topics/Lactic Acid Bacteria and Bacteriocins/exp_1', '--model', 'glm-5', '--section_num', '7', '--subsection_len', '700', '--rag_num', '60', '--outline_reference_num', '1500', '--db_path', './database/database', '--embedding_model', '../SurveyForge/gte-large-en-v1.5', '--api_key', 'sk-8b3f9c6d7a1e4f2c9d5b6a7e3c1f8d2a', '--api_url', 'http://122.193.22.114:8889/v1/chat/completions']' returned non-zero exit status 1.
+Failed experiment duration: 0:01:13.953619
+
+==================================================
+Starting experiments for topic: Dietary Sugars and Body Weight in Randomised Controlled Trials
+==================================================
+Created directory: ./output/survey_bench_glm-5_new_topics/Dietary Sugars and Body Weight in Randomised Controlled Trials/exp_1
+
+Running experiment 1 for topic: Dietary Sugars and Body Weight in Randomised Controlled Trials
+Saving to: ./output/survey_bench_glm-5_new_topics/Dietary Sugars and Body Weight in Randomised Controlled Trials/exp_1
+Start time: 2026-03-09 03:06:48
+
+Attempt 1 for experiment 1 on topic Dietary Sugars and Body Weight in Randomised Controlled Trials
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7f7300630ac0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1366.67it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:29,  2.43s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.34it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Dietary Sugars and Body Weight in Randomised Controlled Trials failed on attempt 1 with return code 1
+Retrying...
+
+Attempt 2 for experiment 1 on topic Dietary Sugars and Body Weight in Randomised Controlled Trials
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7fe1600b4ac0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1376.99it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:29,  2.45s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.29it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Dietary Sugars and Body Weight in Randomised Controlled Trials failed on attempt 2 with return code 1
+Max retries reached. Experiment failed.
+Error in experiment 1 for Dietary Sugars and Body Weight in Randomised Controlled Trials: Command '['python3', 'main.py', '--topic', 'Dietary Sugars and Body Weight in Randomised Controlled Trials', '--gpu', '0', '--saving_path', './output/survey_bench_glm-5_new_topics/Dietary Sugars and Body Weight in Randomised Controlled Trials/exp_1', '--model', 'glm-5', '--section_num', '7', '--subsection_len', '700', '--rag_num', '60', '--outline_reference_num', '1500', '--db_path', './database/database', '--embedding_model', '../SurveyForge/gte-large-en-v1.5', '--api_key', 'sk-8b3f9c6d7a1e4f2c9d5b6a7e3c1f8d2a', '--api_url', 'http://122.193.22.114:8889/v1/chat/completions']' returned non-zero exit status 1.
+Failed experiment duration: 0:01:08.238223
+
+==================================================
+Starting experiments for topic: Flavonoids and Phenolic Compounds from Medicinal Plants
+==================================================
+Created directory: ./output/survey_bench_glm-5_new_topics/Flavonoids and Phenolic Compounds from Medicinal Plants/exp_1
+
+Running experiment 1 for topic: Flavonoids and Phenolic Compounds from Medicinal Plants
+Saving to: ./output/survey_bench_glm-5_new_topics/Flavonoids and Phenolic Compounds from Medicinal Plants/exp_1
+Start time: 2026-03-09 03:08:01
+
+Attempt 1 for experiment 1 on topic Flavonoids and Phenolic Compounds from Medicinal Plants
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7fe20cfa0b30>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 971.08it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:28,  2.34s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.54it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Flavonoids and Phenolic Compounds from Medicinal Plants failed on attempt 1 with return code 1
+Retrying...
+
+Attempt 2 for experiment 1 on topic Flavonoids and Phenolic Compounds from Medicinal Plants
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7f7738b54ac0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1025.85it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:28,  2.40s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.35it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Flavonoids and Phenolic Compounds from Medicinal Plants failed on attempt 2 with return code 1
+Max retries reached. Experiment failed.
+Error in experiment 1 for Flavonoids and Phenolic Compounds from Medicinal Plants: Command '['python3', 'main.py', '--topic', 'Flavonoids and Phenolic Compounds from Medicinal Plants', '--gpu', '0', '--saving_path', './output/survey_bench_glm-5_new_topics/Flavonoids and Phenolic Compounds from Medicinal Plants/exp_1', '--model', 'glm-5', '--section_num', '7', '--subsection_len', '700', '--rag_num', '60', '--outline_reference_num', '1500', '--db_path', './database/database', '--embedding_model', '../SurveyForge/gte-large-en-v1.5', '--api_key', 'sk-8b3f9c6d7a1e4f2c9d5b6a7e3c1f8d2a', '--api_url', 'http://122.193.22.114:8889/v1/chat/completions']' returned non-zero exit status 1.
+Failed experiment duration: 0:01:09.491111
+
+==================================================
+Starting experiments for topic: Neuroimaging Studies ofInternet and Gaming Addiction
+==================================================
+Created directory: ./output/survey_bench_glm-5_new_topics/Neuroimaging Studies ofInternet and Gaming Addiction/exp_1
+
+Running experiment 1 for topic: Neuroimaging Studies ofInternet and Gaming Addiction
+Saving to: ./output/survey_bench_glm-5_new_topics/Neuroimaging Studies ofInternet and Gaming Addiction/exp_1
+Start time: 2026-03-09 03:09:16
+
+Attempt 1 for experiment 1 on topic Neuroimaging Studies ofInternet and Gaming Addiction
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7fbaa0c6cac0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1184.32it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:29,  2.49s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.20it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Neuroimaging Studies ofInternet and Gaming Addiction failed on attempt 1 with return code 1
+Retrying...
+
+Attempt 2 for experiment 1 on topic Neuroimaging Studies ofInternet and Gaming Addiction
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7f3b54874ac0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1218.40it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:29,  2.45s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.30it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Neuroimaging Studies ofInternet and Gaming Addiction failed on attempt 2 with return code 1
+Max retries reached. Experiment failed.
+Error in experiment 1 for Neuroimaging Studies ofInternet and Gaming Addiction: Command '['python3', 'main.py', '--topic', 'Neuroimaging Studies ofInternet and Gaming Addiction', '--gpu', '0', '--saving_path', './output/survey_bench_glm-5_new_topics/Neuroimaging Studies ofInternet and Gaming Addiction/exp_1', '--model', 'glm-5', '--section_num', '7', '--subsection_len', '700', '--rag_num', '60', '--outline_reference_num', '1500', '--db_path', './database/database', '--embedding_model', '../SurveyForge/gte-large-en-v1.5', '--api_key', 'sk-8b3f9c6d7a1e4f2c9d5b6a7e3c1f8d2a', '--api_url', 'http://122.193.22.114:8889/v1/chat/completions']' returned non-zero exit status 1.
+Failed experiment duration: 0:01:08.373054
+
+==================================================
+Starting experiments for topic: Technology-Delivered Interventions for Youth Depression and Anxiety
+==================================================
+Created directory: ./output/survey_bench_glm-5_new_topics/Technology-Delivered Interventions for Youth Depression and Anxiety/exp_1
+
+Running experiment 1 for topic: Technology-Delivered Interventions for Youth Depression and Anxiety
+Saving to: ./output/survey_bench_glm-5_new_topics/Technology-Delivered Interventions for Youth Depression and Anxiety/exp_1
+Start time: 2026-03-09 03:10:29
+
+Attempt 1 for experiment 1 on topic Technology-Delivered Interventions for Youth Depression and Anxiety
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7f01b47c09e0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1243.78it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:29,  2.46s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.26it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Technology-Delivered Interventions for Youth Depression and Anxiety failed on attempt 1 with return code 1
+Retrying...
+
+Attempt 2 for experiment 1 on topic Technology-Delivered Interventions for Youth Depression and Anxiety
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7f1fb44d49e0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1239.09it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [01:01<12:15, 61.27s/it]
+100%|██████████| 13/13 [01:01<00:00,  4.71s/it]
+[APIModel.__req] Attempt 1 failed: HTTPConnectionPool(host='122.193.22.114', port=8889): Read timed out. (read timeout=60), retrying...
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Technology-Delivered Interventions for Youth Depression and Anxiety failed on attempt 2 with return code 1
+Max retries reached. Experiment failed.
+Error in experiment 1 for Technology-Delivered Interventions for Youth Depression and Anxiety: Command '['python3', 'main.py', '--topic', 'Technology-Delivered Interventions for Youth Depression and Anxiety', '--gpu', '0', '--saving_path', './output/survey_bench_glm-5_new_topics/Technology-Delivered Interventions for Youth Depression and Anxiety/exp_1', '--model', 'glm-5', '--section_num', '7', '--subsection_len', '700', '--rag_num', '60', '--outline_reference_num', '1500', '--db_path', './database/database', '--embedding_model', '../SurveyForge/gte-large-en-v1.5', '--api_key', 'sk-8b3f9c6d7a1e4f2c9d5b6a7e3c1f8d2a', '--api_url', 'http://122.193.22.114:8889/v1/chat/completions']' returned non-zero exit status 1.
+Failed experiment duration: 0:02:06.621093
+
+==================================================
+Starting experiments for topic: Multimodal Machine Learning Taxonomy
+==================================================
+Created directory: ./output/survey_bench_glm-5_new_topics/Multimodal Machine Learning Taxonomy/exp_1
+
+Running experiment 1 for topic: Multimodal Machine Learning Taxonomy
+Saving to: ./output/survey_bench_glm-5_new_topics/Multimodal Machine Learning Taxonomy/exp_1
+Start time: 2026-03-09 03:12:41
+
+Attempt 1 for experiment 1 on topic Multimodal Machine Learning Taxonomy
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7fcc7c4789e0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1139.14it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:29,  2.43s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.35it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Multimodal Machine Learning Taxonomy failed on attempt 1 with return code 1
+Retrying...
+
+Attempt 2 for experiment 1 on topic Multimodal Machine Learning Taxonomy
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7f4094160970>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1176.98it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:28,  2.39s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.44it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Multimodal Machine Learning Taxonomy failed on attempt 2 with return code 1
+Max retries reached. Experiment failed.
+Error in experiment 1 for Multimodal Machine Learning Taxonomy: Command '['python3', 'main.py', '--topic', 'Multimodal Machine Learning Taxonomy', '--gpu', '0', '--saving_path', './output/survey_bench_glm-5_new_topics/Multimodal Machine Learning Taxonomy/exp_1', '--model', 'glm-5', '--section_num', '7', '--subsection_len', '700', '--rag_num', '60', '--outline_reference_num', '1500', '--db_path', './database/database', '--embedding_model', '../SurveyForge/gte-large-en-v1.5', '--api_key', 'sk-8b3f9c6d7a1e4f2c9d5b6a7e3c1f8d2a', '--api_url', 'http://122.193.22.114:8889/v1/chat/completions']' returned non-zero exit status 1.
+Failed experiment duration: 0:01:08.264368
+
+==================================================
+Starting experiments for topic: Deep Learning Applications in Computer Vision
+==================================================
+Created directory: ./output/survey_bench_glm-5_new_topics/Deep Learning Applications in Computer Vision/exp_1
+
+Running experiment 1 for topic: Deep Learning Applications in Computer Vision
+Saving to: ./output/survey_bench_glm-5_new_topics/Deep Learning Applications in Computer Vision/exp_1
+Start time: 2026-03-09 03:13:54
+
+Attempt 1 for experiment 1 on topic Deep Learning Applications in Computer Vision
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7ff895ac09e0>
+
+0%|          | 0/11 [00:00<?, ?it/s]
+100%|██████████| 11/11 [00:00<00:00, 1123.41it/s]
+
+0%|          | 0/11 [00:00<?, ?it/s]
+9%|▉         | 1/11 [00:02<00:22,  2.22s/it]
+100%|██████████| 11/11 [00:02<00:00,  4.94it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Deep Learning Applications in Computer Vision failed on attempt 1 with return code 1
+Retrying...
+
+Attempt 2 for experiment 1 on topic Deep Learning Applications in Computer Vision
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7fa1a0cdc9e0>
+
+0%|          | 0/11 [00:00<?, ?it/s]
+100%|██████████| 11/11 [00:00<00:00, 1120.36it/s]
+
+0%|          | 0/11 [00:00<?, ?it/s]
+9%|▉         | 1/11 [00:02<00:21,  2.16s/it]
+100%|██████████| 11/11 [00:02<00:00,  5.07it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Deep Learning Applications in Computer Vision failed on attempt 2 with return code 1
+Max retries reached. Experiment failed.
+Error in experiment 1 for Deep Learning Applications in Computer Vision: Command '['python3', 'main.py', '--topic', 'Deep Learning Applications in Computer Vision', '--gpu', '0', '--saving_path', './output/survey_bench_glm-5_new_topics/Deep Learning Applications in Computer Vision/exp_1', '--model', 'glm-5', '--section_num', '7', '--subsection_len', '700', '--rag_num', '60', '--outline_reference_num', '1500', '--db_path', './database/database', '--embedding_model', '../SurveyForge/gte-large-en-v1.5', '--api_key', 'sk-8b3f9c6d7a1e4f2c9d5b6a7e3c1f8d2a', '--api_url', 'http://122.193.22.114:8889/v1/chat/completions']' returned non-zero exit status 1.
+Failed experiment duration: 0:01:07.622761
+
+==================================================
+Starting experiments for topic: Hallucination in LLMs
+==================================================
+Created directory: ./output/survey_bench_glm-5_new_topics/Hallucination in LLMs/exp_1
+
+Running experiment 1 for topic: Hallucination in LLMs
+Saving to: ./output/survey_bench_glm-5_new_topics/Hallucination in LLMs/exp_1
+Start time: 2026-03-09 03:15:07
+
+Attempt 1 for experiment 1 on topic Hallucination in LLMs
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7f3ddd0909e0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 747.49it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:28,  2.35s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.45it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Hallucination in LLMs failed on attempt 1 with return code 1
+Retrying...
+
+Attempt 2 for experiment 1 on topic Hallucination in LLMs
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7fc374f0c9e0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1062.32it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:28,  2.34s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.35it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Hallucination in LLMs failed on attempt 2 with return code 1
+Max retries reached. Experiment failed.
+Error in experiment 1 for Hallucination in LLMs: Command '['python3', 'main.py', '--topic', 'Hallucination in LLMs', '--gpu', '0', '--saving_path', './output/survey_bench_glm-5_new_topics/Hallucination in LLMs/exp_1', '--model', 'glm-5', '--section_num', '7', '--subsection_len', '700', '--rag_num', '60', '--outline_reference_num', '1500', '--db_path', './database/database', '--embedding_model', '../SurveyForge/gte-large-en-v1.5', '--api_key', 'sk-8b3f9c6d7a1e4f2c9d5b6a7e3c1f8d2a', '--api_url', 'http://122.193.22.114:8889/v1/chat/completions']' returned non-zero exit status 1.
+Failed experiment duration: 0:01:08.207788
+
+==================================================
+Starting experiments for topic: Acceleration for LLMs
+==================================================
+Created directory: ./output/survey_bench_glm-5_new_topics/Acceleration for LLMs/exp_1
+
+Running experiment 1 for topic: Acceleration for LLMs
+Saving to: ./output/survey_bench_glm-5_new_topics/Acceleration for LLMs/exp_1
+Start time: 2026-03-09 03:16:20
+
+Attempt 1 for experiment 1 on topic Acceleration for LLMs
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7f38a02209e0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1131.10it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:29,  2.43s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.33it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Acceleration for LLMs failed on attempt 1 with return code 1
+Retrying...
+
+Attempt 2 for experiment 1 on topic Acceleration for LLMs
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7fec6c84c9e0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1251.05it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:29,  2.44s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.31it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Acceleration for LLMs failed on attempt 2 with return code 1
+Max retries reached. Experiment failed.
+Error in experiment 1 for Acceleration for LLMs: Command '['python3', 'main.py', '--topic', 'Acceleration for LLMs', '--gpu', '0', '--saving_path', './output/survey_bench_glm-5_new_topics/Acceleration for LLMs/exp_1', '--model', 'glm-5', '--section_num', '7', '--subsection_len', '700', '--rag_num', '60', '--outline_reference_num', '1500', '--db_path', './database/database', '--embedding_model', '../SurveyForge/gte-large-en-v1.5', '--api_key', 'sk-8b3f9c6d7a1e4f2c9d5b6a7e3c1f8d2a', '--api_url', 'http://122.193.22.114:8889/v1/chat/completions']' returned non-zero exit status 1.
+Failed experiment duration: 0:01:06.589976
+
+==================================================
+Starting experiments for topic: LLMs-based Agents
+==================================================
+Created directory: ./output/survey_bench_glm-5_new_topics/LLMs-based Agents/exp_1
+
+Running experiment 1 for topic: LLMs-based Agents
+Saving to: ./output/survey_bench_glm-5_new_topics/LLMs-based Agents/exp_1
+Start time: 2026-03-09 03:17:32
+
+Attempt 1 for experiment 1 on topic LLMs-based Agents
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7fc8bcf54ac0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1228.09it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:28,  2.34s/it]
+100%|██████████| 13/13 [00:02<00:00,  5.55it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic LLMs-based Agents failed on attempt 1 with return code 1
+Retrying...
+
+Attempt 2 for experiment 1 on topic LLMs-based Agents
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7fcef0358ac0>
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 1026.83it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s]
+8%|▊         | 1/13 [00:02<00:26,  2.20s/it]
+85%|████████▍ | 11/13 [01:01<00:11,  5.65s/it]
+100%|██████████| 13/13 [01:01<00:00,  4.70s/it]
+[APIModel.__req] Attempt 1 failed: HTTPConnectionPool(host='122.193.22.114', port=8889): Read timed out. (read timeout=60), retrying...
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic LLMs-based Agents failed on attempt 2 with return code 1
+Max retries reached. Experiment failed.
+Error in experiment 1 for LLMs-based Agents: Command '['python3', 'main.py', '--topic', 'LLMs-based Agents', '--gpu', '0', '--saving_path', './output/survey_bench_glm-5_new_topics/LLMs-based Agents/exp_1', '--model', 'glm-5', '--section_num', '7', '--subsection_len', '700', '--rag_num', '60', '--outline_reference_num', '1500', '--db_path', './database/database', '--embedding_model', '../SurveyForge/gte-large-en-v1.5', '--api_key', 'sk-8b3f9c6d7a1e4f2c9d5b6a7e3c1f8d2a', '--api_url', 'http://122.193.22.114:8889/v1/chat/completions']' returned non-zero exit status 1.
+Failed experiment duration: 0:02:05.201690
+
+==================================================
+Starting experiments for topic: Instruction Tuning for LLMs
+==================================================
+Created directory: ./output/survey_bench_glm-5_new_topics/Instruction Tuning for LLMs/exp_1
+
+Running experiment 1 for topic: Instruction Tuning for LLMs
+Saving to: ./output/survey_bench_glm-5_new_topics/Instruction Tuning for LLMs/exp_1
+Start time: 2026-03-09 03:19:42
+
+Attempt 1 for experiment 1 on topic Instruction Tuning for LLMs
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7f189a4b49e0>
+
+0%|          | 0/14 [00:00<?, ?it/s]
+100%|██████████| 14/14 [00:00<00:00, 1419.77it/s]
+
+0%|          | 0/14 [00:00<?, ?it/s]
+7%|▋         | 1/14 [00:02<00:32,  2.49s/it]
+100%|██████████| 14/14 [00:02<00:00,  5.60it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Instruction Tuning for LLMs failed on attempt 1 with return code 1
+Retrying...
+
+Attempt 2 for experiment 1 on topic Instruction Tuning for LLMs
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+<generator object APIModel.__req.<locals>.execute_request.<locals>.generate at 0x7efec90f09e0>
+
+0%|          | 0/14 [00:00<?, ?it/s]
+100%|██████████| 14/14 [00:00<00:00, 1368.55it/s]
+
+0%|          | 0/14 [00:00<?, ?it/s]
+7%|▋         | 1/14 [00:02<00:31,  2.43s/it]
+100%|██████████| 14/14 [00:02<00:00,  5.74it/s]
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 34, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/agents/outline_writer.py", line 119, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Instruction Tuning for LLMs failed on attempt 2 with return code 1
+Max retries reached. Experiment failed.
+Error in experiment 1 for Instruction Tuning for LLMs: Command '['python3', 'main.py', '--topic', 'Instruction Tuning for LLMs', '--gpu', '0', '--saving_path', './output/survey_bench_glm-5_new_topics/Instruction Tuning for LLMs/exp_1', '--model', 'glm-5', '--section_num', '7', '--subsection_len', '700', '--rag_num', '60', '--outline_reference_num', '1500', '--db_path', './database/database', '--embedding_model', '../SurveyForge/gte-large-en-v1.5', '--api_key', 'sk-8b3f9c6d7a1e4f2c9d5b6a7e3c1f8d2a', '--api_url', 'http://122.193.22.114:8889/v1/chat/completions']' returned non-zero exit status 1.
+Failed experiment duration: 0:01:07.787940
+
+All experiments completed!
+Start time: 2026-03-09 03:04:00.261267
+End time: 2026-03-09 03:20:55.101498
+Total duration: 0:16:54.840231
+Log file saved to: ./output/survey_bench_glm-5_new_topics/experiment_times.log

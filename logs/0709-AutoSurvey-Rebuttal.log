@@ -1,0 +1,29 @@
+Starting experiments at: 2026-07-09 06:05:05.182208
+
+==================================================
+Starting experiments for topic: Lactic Acid Bacteria and Bacteriocins
+==================================================
+Created directory: ./output/0709-rebuttal-remain/Lactic Acid Bacteria and Bacteriocins/exp_1
+
+Running experiment 1 for topic: Lactic Acid Bacteria and Bacteriocins
+Saving to: ./output/0709-rebuttal-remain/Lactic Acid Bacteria and Bacteriocins/exp_1
+Start time: 2026-07-09 06:05:05
+
+Attempt 1 for experiment 1 on topic Lactic Acid Bacteria and Bacteriocins
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+Traceback (most recent call last):
+  File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/run_demo.py", line 192, in <module>
+    main()
+  File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/run_demo.py", line 159, in main
+    success = run_experiment(topic, exp_num, base_path, 2)
+  File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/run_demo.py", line 64, in run_experiment
+    output = process.stdout.readline()
+KeyboardInterrupt

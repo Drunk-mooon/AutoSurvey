@@ -1,4 +1,5 @@
 import os
+import re
 import numpy as np
 import tiktoken
 from tqdm import trange,tqdm
@@ -36,8 +37,6 @@ class outlineWriter():
         # merge outline
         section_outline = self.merge_outlines(topic=topic, outlines=outlines)
         print("[DEBUG:] merge section-level rough outline finish")
-        with open(f"/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/output/LLM-based Multi-Agent/2-Merged_outlines.txt", "w") as f:
-            f.write(section_outline + '\n\n')
 
         # generate subsection-level outline
         subsection_outlines = self.generate_subsection_outlines(topic=topic, section_outline= section_outline,rag_num= 50)
@@ -45,8 +44,6 @@ class outlineWriter():
 
         merged_outline = self.process_outlines(section_outline, subsection_outlines)
         print("[DEBUG:] merge subsection-level rough outline finish")
-        with open(f"/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/AutoSurvey/output/LLM-based Multi-Agent/3-Merged_Sub_outline.txt", "w") as f:
-            f.write(merged_outline + '\n\n')
         # edit final outline
         final_outline = self.edit_final_outline(merged_outline)
 
@@ -266,20 +263,24 @@ class outlineWriter():
         return prompt
     
     def extract_title_sections_descriptions(self, outline):
-        title = outline.split('Title: ')[1].split('\n')[0]
+        title_match = re.search(r'Title:\s*([^\n]+)', outline)
+        title = title_match.group(1).strip() if title_match else ''
         sections, descriptions = [], []
-        for i in range(100):
-            if f'Section {i+1}' in outline:
-                sections.append(outline.split(f'Section {i+1}: ')[1].split('\n')[0])
-                descriptions.append(outline.split(f'Description {i+1}: ')[1].split('\n')[0])
+        # \b 词边界避免 Section 误匹配 Subsection
+        sec_dict = {int(idx): name.strip() for idx, name in re.findall(r'\bSection\s+(\d+):\s*([^\n]+)', outline)}
+        desc_dict = {int(idx): d.strip() for idx, d in re.findall(r'\bDescription\s+(\d+):\s*([^\n]+)', outline)}
+        for idx in sorted(set(sec_dict.keys()) & set(desc_dict.keys())):
+            sections.append(sec_dict[idx])
+            descriptions.append(desc_dict[idx])
         return title, sections, descriptions
-    
+
     def extract_subsections_subdescriptions(self, outline):
         subsections, subdescriptions = [], []
-        for i in range(100):
-            if f'Subsection {i+1}' in outline:
-                subsections.append(outline.split(f'Subsection {i+1}: ')[1].split('\n')[0])
-                subdescriptions.append(outline.split(f'Description {i+1}: ')[1].split('\n')[0])
+        sub_dict = {int(idx): name.strip() for idx, name in re.findall(r'\bSubsection\s+(\d+):\s*([^\n]+)', outline)}
+        desc_dict = {int(idx): d.strip() for idx, d in re.findall(r'\bDescription\s+(\d+):\s*([^\n]+)', outline)}
+        for idx in sorted(set(sub_dict.keys()) & set(desc_dict.keys())):
+            subsections.append(sub_dict[idx])
+            subdescriptions.append(desc_dict[idx])
         return subsections, subdescriptions
     
     def chunking(self, papers, titles, chunk_size = 14000):

@@ -1,0 +1,2096 @@
+Starting experiments at: 2026-07-11 12:49:24.634941
+
+==================================================
+Starting experiments for topic: Lactic Acid Bacteria and Bacteriocins
+==================================================
+Created directory: ./output/0709-rebuttal-remain/Lactic Acid Bacteria and Bacteriocins/exp_1
+
+Running experiment 1 for topic: Lactic Acid Bacteria and Bacteriocins
+Saving to: ./output/0709-rebuttal-remain/Lactic Acid Bacteria and Bacteriocins/exp_1
+Start time: 2026-07-11 12:49:24
+
+Attempt 1 for experiment 1 on topic Lactic Acid Bacteria and Bacteriocins
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f10981ba920>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 89effd46-6e68-4781-9426-f85127f160fa)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f10981bb370>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 5a84f2c2-9d91-447b-ad1b-4e52272b3efa)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f10981bb6d0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 93d311af-58ce-4a3e-bb6a-5ad4cdf282a6)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f10981bba30>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: f8236b5b-4475-403a-8d40-35317f421e9a)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f10981bbd90>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: dfcf8235-348a-4b18-84df-97c84979ccce)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f109821c130>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: c477ce0e-0fbc-49cc-a0ee-18c835cb85ce)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f10981bb760>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: d3f694e4-0963-41a3-b382-f7a277fcb0f7)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f10981bb3a0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 7745a65e-7998-4ab8-aa47-754e59c50807)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f10981ba920>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: a031c992-4b40-4165-b39e-494dfd960536)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f109821fbb0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 42281ea6-2abb-474f-8586-24b914a31d68)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f109821ee90>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 4a3d6e54-15cd-45f2-98ab-7ab9f61af0f0)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f109821ebf0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 3c49c9d9-39ab-434c-be29-8e15079155e1)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+Max retries reached. Failed.
+None
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 720.78it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s][APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+
+8%|▊         | 1/13 [00:12<02:31, 12.60s/it]
+23%|██▎       | 3/13 [00:13<00:37,  3.76s/it]
+100%|██████████| 13/13 [00:14<00:00,  1.65it/s]
+100%|██████████| 13/13 [00:14<00:00,  1.08s/it]
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+Max retries reached. Failed.
+Max retries reached. Failed.
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+Max retries reached. Failed.
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/src/agents/outline_writer.py", line 35, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/src/agents/outline_writer.py", line 116, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Lactic Acid Bacteria and Bacteriocins failed on attempt 1 with return code 1
+Retrying...
+
+Attempt 2 for experiment 1 on topic Lactic Acid Bacteria and Bacteriocins
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6ef57e6950>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 3ce79b65-841e-454b-9e6f-e4c87813b4af)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6ef57e73a0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 0a54c557-1d4b-42fc-96f4-0f784848f9da)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6ef57e7700>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: ba0eccbc-a2e9-4201-bca3-a156f9e6ecff)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6ef57e7a60>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: dc7d9d89-bb51-4b2c-9224-ac4a399bb182)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6ef57e7dc0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 2cb0f763-e090-4e9d-ac3a-f6ea865c59f7)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6ef5848160>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 8573fa8b-a949-4544-8a0b-f886306cf080)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6ef57e7730>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 2e8c8aab-b337-46a7-9742-4a13dfa51071)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6ef57e72b0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 409f4dd2-3ba9-47c0-a16f-63f8edf9a860)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6ef57e6800>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 66fd7f71-945f-446f-8b2b-60742e6719e9)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6ef584bb50>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 3dda12c4-071f-4f2a-8114-a54f50285f5c)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6ef584afb0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: d0377535-5b70-4b59-9478-15241be82f41)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f6ef584abf0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 24bfbcdb-e15f-4fe1-8538-106b230147f3)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+Max retries reached. Failed.
+None
+
+0%|          | 0/13 [00:00<?, ?it/s]
+100%|██████████| 13/13 [00:00<00:00, 941.86it/s]
+
+0%|          | 0/13 [00:00<?, ?it/s][APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+
+8%|▊         | 1/13 [00:16<03:15, 16.30s/it]
+15%|█▌        | 2/13 [00:16<01:16,  6.94s/it]
+62%|██████▏   | 8/13 [00:17<00:06,  1.25s/it]
+100%|██████████| 13/13 [00:17<00:00,  1.34s/it]
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+Max retries reached. Failed.
+Max retries reached. Failed.
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/src/agents/outline_writer.py", line 35, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/src/agents/outline_writer.py", line 116, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Lactic Acid Bacteria and Bacteriocins failed on attempt 2 with return code 1
+Max retries reached. Experiment failed.
+Error in experiment 1 for Lactic Acid Bacteria and Bacteriocins: Command '['python3', 'main.py', '--topic', 'Lactic Acid Bacteria and Bacteriocins', '--gpu', '0', '--saving_path', './output/0709-rebuttal-remain/Lactic Acid Bacteria and Bacteriocins/exp_1', '--model', 'mimo-v2.5', '--section_num', '9', '--subsection_len', '900', '--rag_num', '60', '--outline_reference_num', '1500', '--db_path', './database/database', '--embedding_model', '../SurveyForge/gte-large-en-v1.5', '--api_key', 'sk-FYkoCOmzxXaM0EQzacwDtyJNAkOzgtTCfVGW3O0JZ7LZDhZJ', '--api_url', 'https://api.xiaomimimo.com/v1/chat/completions']' returned non-zero exit status 1.
+Failed experiment duration: 0:07:36.925595
+
+==================================================
+Starting experiments for topic: Mathematical Models of Malaria
+==================================================
+Created directory: ./output/0709-rebuttal-remain/Mathematical Models of Malaria/exp_1
+
+Running experiment 1 for topic: Mathematical Models of Malaria
+Saving to: ./output/0709-rebuttal-remain/Mathematical Models of Malaria/exp_1
+Start time: 2026-07-11 12:57:06
+
+Attempt 1 for experiment 1 on topic Mathematical Models of Malaria
+/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/src/utils.py:10: LangChainDeprecationWarning: Importing PyPDFLoader from langchain.document_loaders is deprecated. Please replace deprecated imports:
+
+>> from langchain.document_loaders import PyPDFLoader
+
+with new imports of:
+
+>> from langchain_community.document_loaders import PyPDFLoader
+You can use the langchain cli to **automatically** upgrade many imports. Please see documentation here <https://python.langchain.com/docs/versions/v0_2/>
+from langchain.document_loaders import PyPDFLoader
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f11c57e29e0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 84538183-82d3-4ea3-b480-8e33ef6aa530)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f11c57e3430>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 89065619-0527-4c74-be5d-380c08acabbf)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f11c57e3790>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 5184d5bf-c138-4fed-9899-1463cec2b53e)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f11c57e3af0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 21763c3b-f334-4aea-87c4-4f2c7daf74bf)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f11c57e3e50>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 3b3d4555-9889-4610-931a-acddea05b3c0)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/configuration.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f11c4dc41f0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: b86c8bbd-19bd-4c6f-b702-6b33d074f86f)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/configuration.py
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f11c57e3610>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 36e8bed0-504a-47a4-ae9b-05eebb775f0f)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f11c57e33d0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: f52781f3-d59b-4178-855e-b51ee5573ff1)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f11c57e2920>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 7d11446f-f777-4654-9626-768f219ffd33)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f11c4dc7b80>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 4b39aae7-81b8-40be-935d-8aece0cda96f)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f11c4dc6f20>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: f5188094-e901-44c8-b0af-a1c2622ddc02)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /Alibaba-NLP/new-impl/resolve/main/modeling.py (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f11c4dc6bf0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: c37064b9-b4b9-408e-9c93-9f2039a1b5a3)')' thrown while requesting HEAD https://huggingface.co/Alibaba-NLP/new-impl/resolve/main/modeling.py
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+Max retries reached. Failed.
+None
+
+0%|          | 0/12 [00:00<?, ?it/s]
+100%|██████████| 12/12 [00:00<00:00, 996.61it/s]
+
+0%|          | 0/12 [00:00<?, ?it/s][APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 1 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 2 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+
+8%|▊         | 1/12 [00:14<02:35, 14.10s/it]
+100%|██████████| 12/12 [00:14<00:00,  1.18s/it]
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 3 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 4 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+Max retries reached. Failed.
+Max retries reached. Failed.
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+Max retries reached. Failed.
+Max retries reached. Failed.
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+[APIModel.__req] Attempt 5 failed: Status Code: 401, Text: {
+"error": {
+"message": "Invalid API Key",
+"param": "Please provide valid API Key",
+"code": "401",
+"type": "invalid_key"
+}
+}
+, retrying...
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Max retries reached. Failed.
+Traceback (most recent call last):
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/main.py", line 92, in <module>
+main(args)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/main.py", line 72, in main
+outline_with_description, outline_wo_description = write_outline(args.topic, args.model, args.section_num, args.outline_reference_num, db, args.api_key, args.api_url)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/main.py", line 33, in write_outline
+outline = outline_writer.draft_outline(topic, outline_reference_num, 30000, section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/src/agents/outline_writer.py", line 35, in draft_outline
+outlines = self.generate_rough_outlines(topic=topic, papers_chunks = abs_chunks, titles_chunks = titles_chunks, section_num=section_num)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/src/agents/outline_writer.py", line 116, in generate_rough_outlines
+self.output_token_usage += self.token_counter.num_tokens_from_list_string(outlines)
+File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/src/utils.py", line 29, in num_tokens_from_list_string
+num += len(self.encoding.encode(s))
+File "/usr/local/lib/python3.10/dist-packages/tiktoken/core.py", line 116, in encode
+if match := _special_token_regex(disallowed_special).search(text):
+TypeError: expected string or buffer
+Experiment 1 for topic Mathematical Models of Malaria failed on attempt 1 with return code 1
+Retrying...
+Traceback (most recent call last):
+  File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/run_demo.py", line 192, in <module>
+    main()
+  File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/run_demo.py", line 159, in main
+    success = run_experiment(topic, exp_num, base_path, 2)
+  File "/hpc_stor03/sjtu_home/ziyue.yang/sci-agent/baselines/AutoSurvey/run_demo.py", line 82, in run_experiment
+    time.sleep(5)
+KeyboardInterrupt

@@ -11,36 +11,80 @@ class APIModel:
         self.__api_url = api_url
         self.model = model
         
-    def __req(self, text, temperature, max_try = 5):
+
+    def __req(self, text, temperature, stream=False, max_try=5):
         url = f"{self.__api_url}"
-        pay_load_dict = {"model": f"{self.model}","messages": [{
+        
+        # 构造请求载荷，加入 stream 参数
+        pay_load_dict = {
+            "model": f"{self.model}",
+            "messages": [{
                 "role": "user",
-                "temperature":temperature,
-                "content": f"{text}"}]}
-        payload = json.dumps(pay_load_dict)
-        headers = {
-        'Accept': 'application/json',
-        'Authorization': f'Bearer {self.__api_key}',
-        'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
-        'Content-Type': 'application/json'
+                "content": f"{text}"
+            }],
+            "temperature": temperature,
+            "stream": stream  # 由参数控制是否开启流式
         }
-        try:
-            response = requests.request("POST", url, headers=headers, data=payload, timeout=45)
-            return json.loads(response.text)['choices'][0]['message']['content']
-        except Exception as e:
-            print(f"[APIModel.__req] initial request failed: {e}, retrying")
-            for _ in range(max_try):
-                print(f"retrying")
-                try:
-                    response = requests.request("POST", url, headers=headers, data=payload, timeout=45)
-                    if response.status_code != 200:
-                        print(f"[APIModel.__req] status_code={response.status_code}, text={response.text[:200]}")
-                    return json.loads(response.text)['choices'][0]['message']['content']
-                except:
-                    pass
-                time.sleep(0.2)
-            print(f"max retry, stop retrying")
-            return None
+        
+        headers = {
+            'Accept': 'application/json',
+            'Authorization': f'Bearer {self.__api_key}',
+            'User-Agent': 'Apifox/1.0.0 (https://apifox.com)',
+            'Content-Type': 'application/json'
+        }
+
+        def execute_request():
+            # 注意：如果是 stream 模式，通常不需要设置超长的 timeout，这里维持你的逻辑
+            response = requests.request(
+                "POST", url, headers=headers, 
+                data=json.dumps(pay_load_dict), 
+                timeout=300 if not stream else 60,
+                stream=stream # 告诉 requests 保持连接
+            )
+            
+            if response.status_code != 200:
+                raise Exception(f"Status Code: {response.status_code}, Text: {response.text[:200]}")
+
+            if not stream:
+                # --- 非流式处理 ---
+                content =  json.loads(response.text)['choices'][0]['message']['content']
+                if not content:
+                    # Fallback to reasoning_content if content is None or empty
+                    content = json.loads(response.text)['choices'][0]['message'].get('reasoning_content')
+                if not content:
+                    raise ValueError(f"response content is None or empty")
+                return content
+            else:
+                # --- 流式处理 (Generator) ---
+                def generate():
+                    for line in response.iter_lines():
+                        if line:
+                            line_text = line.decode('utf-8').strip()
+                            if line_text.startswith("data: "):
+                                data_str = line_text[6:]
+                                if data_str == "[DONE]":
+                                    break
+                                try:
+                                    data_json = json.loads(data_str)
+                                    # 注意：流式的路径通常是 delta 而不是 message
+                                    content = data_json['choices'][0].get('delta', {}).get('content', '')
+                                    if content:
+                                        yield content
+                                except Exception as e:
+                                    print(f"Stream parsing error: {e}")
+                return generate()
+
+        # 重试逻辑封装
+        for i in range(max_try + 1): # 0是初始请求，后面是 retry
+            try:
+                return execute_request()
+            except Exception as e:
+                if i < max_try:
+                    print(f"[APIModel.__req] Attempt {i+1} failed: {e}, retrying...")
+                    time.sleep(0.5)
+                else:
+                    print(f"Max retries reached. Failed.")
+                    return None
     
     def chat(self, text, temperature=1):
         response = self.__req(text, temperature=temperature, max_try=5)

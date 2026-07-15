@@ -44,7 +44,7 @@ class subsectionWriter():
         temp_abs_dic = {p['id']:p['abs'] for p in total_references_infos}
 
         for i in range(len(parsed_outline['sections'])):
-            for references_ids in section_references_ids[i]:
+            for j, references_ids in enumerate(section_references_ids[i]):
                 
                 references_titles = [temp_title_dic[_] for _ in references_ids]
                 references_papers = [temp_abs_dic[_] for _ in references_ids]
@@ -52,8 +52,9 @@ class subsectionWriter():
                 for t, p in zip(references_titles, references_papers):
                     paper_texts += f'---\n\npaper_title: {t}\n\npaper_content:\n\n{p}\n'
                 paper_texts+='---\n'
-    
                 section_paper_texts[i].append(paper_texts)
+
+                print(f"[DEBUG:] using paper num for subsection {i}.{j}: ", len(references_ids))
 
         thread_l = []
         for i in range(len(parsed_outline['sections'])):
@@ -64,11 +65,15 @@ class subsectionWriter():
         for thread in thread_l:
             thread.join()
         raw_survey = self.generate_document(parsed_outline, section_content)
+        print(f"[DEBUG:] raw survey generation: {raw_survey}")
+        print("[DEBUG:] begin processing references")
         raw_survey_with_references, raw_references = self.process_references(raw_survey)
+        print(f"[DEBUG:] raw survey with references: {raw_survey_with_references}")
         if refining:
             print("[DEBUG:] begin refining")
             final_section_content = self.refine_subsections(topic, outline, section_content)
             refined_survey = self.generate_document(parsed_outline, final_section_content)
+            print(f"[DEBUG:] refined survey generation without references: {refined_survey}")
             refined_survey_with_references, refined_references = self.process_references(refined_survey)
             return raw_survey+'\n', raw_survey_with_references+'\n', raw_references, refined_survey+'\n', refined_survey_with_references+'\n', refined_references#, mindmap
         else:
@@ -131,6 +136,11 @@ class subsectionWriter():
         contents = self.api_model.batch_chat(prompts, temperature=1)
         self.output_token_usage += self.token_counter.num_tokens_from_list_string(contents)
         contents = [c.replace('<format>','').replace('</format>','') for c in contents]
+        for i in range(len(subsections)):
+            subsection = subsections[i]
+            print(f"[DEBUG:] Writing subsection prompt: {prompts[i]}")
+            print(f"[DEBUG:] USing Paper Num: {len(paper_texts_l[i])}")
+            print(f"[DEBUG:] SUBSECTION: {subsection} contents before citation check: {contents[i]}")
 
         prompts = []
         for content, paper_texts in zip(contents, paper_texts_l):
@@ -140,6 +150,7 @@ class subsectionWriter():
         self.output_token_usage += self.token_counter.num_tokens_from_list_string(contents)
         contents = [c.replace('<format>','').replace('</format>','') for c in contents]
     
+        print(f"[DEBUG:] SUBSECTION: {subsection} contents after citation check: {contents}")
         res_l[idx] = contents
         return contents
         
